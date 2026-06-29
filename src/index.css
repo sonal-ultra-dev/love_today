@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #1F1B2E;
+  --color-surface: #2D2438;
+  --color-paper: #FFF8F2;
+  --color-coral: #FF6B5B;
+  --color-honey: #FFC857;
+  --color-muted: #8A8198;
+  --color-ink-soft: #423A52;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
