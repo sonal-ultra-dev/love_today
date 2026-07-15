@@ -6,7 +6,7 @@ import logo from "../../assets/logo.png"
 
 const NAV_LINKS = [
   { label: "How it works", hash: "how-it-works" },
-  { label: "Stories", hash: "stories" },
+  { label: "About us", hash: "stories" },
   { label: "Safety", hash: "safety" },
 ];
 
@@ -148,13 +148,7 @@ export default function Navbar() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <a
-              href="#login"
-              className="font-body text-sm text-paper/80 hover:text-paper transition-colors"
-            >
-              Log in
-            </a>
-
+        
             <Button variant="primary" className="!px-6 !py-2.5 text-sm">
               Get the app
             </Button>
@@ -227,12 +221,6 @@ export default function Navbar() {
               </div>
             </div>
 
-            <a
-              href="#login"
-              className="font-body text-paper/90 text-base"
-            >
-              Log in
-            </a>
           </div>
         )}
       </header>

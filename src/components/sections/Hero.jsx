@@ -1,27 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "../ui/Button.jsx";
+import ContactModal from "../ui/ContactModal.jsx";
 import heroBg from "../../assets/latika.png";
 import heroBack from "../../assets/test123.jpg";
 // import heroBg from "../../assets/background2.png";
 
-function useTodayLabel() {
-  const [label, setLabel] = useState("");
-
-  useEffect(() => {
-    const fmt = new Intl.DateTimeFormat("en-US", {
-      weekday: "long",
-      month: "long",
-      day: "numeric",
-      year: "numeric",
-    });
-    setLabel(fmt.format(new Date()));
-  }, []);
-
-  return label;
-}
-
 export default function Hero() {
-  const today = useTodayLabel();
+  const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <section
@@ -60,7 +45,13 @@ export default function Hero() {
         </p>
 
         <div className="flex gap-5 mt-10 flex-wrap">
-          <Button variant="primary">Find your someone</Button>
+          <Button
+            variant="primary"
+            className="contact-btn-pulse"
+            onClick={() => setContactOpen(true)}
+          >
+            Contact Us
+          </Button>
           <Button variant="secondary">Learn More</Button>
         </div>
       </div>
@@ -142,6 +133,8 @@ export default function Hero() {
 
     </div>
   </div>
+
+  <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
 </section>
   );
 }
