@@ -32,7 +32,7 @@ const FOOTER_COLUMNS = [
     heading: "Follow",
     links: [
       { label: "Instagram", href: "#" },
-      { label: "TikTok", href: "#" },
+      { label: "Facebook", href: "#" },
       { label: "X / Twitter", href: "#" },
     ],
   },

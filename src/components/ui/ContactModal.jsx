@@ -82,6 +82,12 @@ export default function ContactModal({ open, onClose }) {
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <input
+              type="number"
+              placeholder="Phone number"
+              required
+              className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
+            />
+            <input
               type="email"
               placeholder="Your email"
               required
