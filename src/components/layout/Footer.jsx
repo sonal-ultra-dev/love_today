@@ -7,7 +7,7 @@ const FOOTER_COLUMNS = [
       { label: "How it works", hash: "how-it-works" },
       { label: "Safety", hash: "safety" },
       { label: "Stories", hash: "stories" },
-      { label: "Pricing", to: "/pricing" },
+      { label: "Pricing", hash: "pricing" },
     ],
   },
   {

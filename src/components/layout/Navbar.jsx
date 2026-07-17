@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: "How it works", hash: "how-it-works" },
   { label: "About us", hash: "stories" },
   { label: "Safety", hash: "safety" },
+  { label: "Pricing", hash: "pricing" },
 ];
 
 const LEGAL_LINKS = [
@@ -88,15 +89,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-
-            <li>
-              <Link
-                to="/pricing"
-                className="font-body text-sm text-paper/80 hover:text-paper transition-colors"
-              >
-                Pricing
-              </Link>
-            </li>
 
             {/* Legal Dropdown */}
             <li className="relative">
@@ -190,14 +182,6 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-
-            <Link
-              to="/pricing"
-              onClick={() => setOpen(false)}
-              className="font-body text-paper/90 text-base"
-            >
-              Pricing
-            </Link>
 
             <div className="border-t border-ink-soft pt-4">
               <p className="font-mono text-xs uppercase tracking-widest text-muted mb-3">

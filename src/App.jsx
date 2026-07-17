@@ -7,6 +7,7 @@ import OneToOneClub from "./components/sections/OneToOneClub.jsx";
 import ReferralProgram from "./components/sections/ReferralProgram.jsx";
 import Stories from "./components/sections/Stories.jsx";
 import Safety from "./components/sections/Safety.jsx";
+import PricingSection from "./components/sections/Pricing.jsx";
 import CTABanner from "./components/sections/CTABanner.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
@@ -24,6 +25,7 @@ function Home() {
       <ReferralProgram />
       <Stories />
       <Safety />
+      <PricingSection embedded />
       <CTABanner />
     </>
   );

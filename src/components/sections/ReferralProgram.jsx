@@ -9,7 +9,7 @@ const STEPS = [
   },
   {
     title: "Bonus for both",
-    body: "They may receive a fixed Bonus Credit; you earn ₹100 Referral Bonus on successful activation.",
+    body: "They may receive a fixed Bonus Credit; you earn a Referral Bonus on successful activation.",
   },
 ];
 
