@@ -123,8 +123,7 @@ export default function Contact() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="Phone number"
-                
+                placeholder="Phone number (optional)"
                 className="w-full px-4 py-3 rounded-xl bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
               />
               <input
@@ -132,16 +131,14 @@ export default function Contact() {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="Your email"
-                
+                placeholder="Your email (optional)"
                 className="w-full px-4 py-3 rounded-xl bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
               />
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="How can we help?"
-                
+                placeholder="How can we help? (optional)"
                 rows={5}
                 className="w-full px-4 py-3 rounded-xl bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
               />

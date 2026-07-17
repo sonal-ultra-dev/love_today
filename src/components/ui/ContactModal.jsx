@@ -124,8 +124,7 @@ export default function ContactModal({ open, onClose }) {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              placeholder="Phone number"
-              required
+              placeholder="Phone number (optional)"
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <input
@@ -133,16 +132,14 @@ export default function ContactModal({ open, onClose }) {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="Your email"
-              required
+              placeholder="Your email (optional)"
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <textarea
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="How can we help?"
-              required
+              placeholder="How can we help? (optional)"
               rows={4}
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
