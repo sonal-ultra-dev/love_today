@@ -1,11 +1,9 @@
 import { useEffect } from "react";
-import { LEGAL_CONTENT } from "../../components/content/legal";
+import { LEGAL_CONTENT, COMPANY } from "../../components/content/legal";
+import LegalSectionList from "../../components/content/LegalSectionList.jsx";
 
 export default function LegalModal({ contentKey, onClose }) {
   const data = contentKey ? LEGAL_CONTENT[contentKey] : null;
-  console.log("contentKey:", contentKey);
-console.log("LEGAL_CONTENT:", LEGAL_CONTENT);
-console.log("data:", data);
 
   useEffect(() => {
     if (!data) return;
@@ -28,7 +26,7 @@ console.log("data:", data);
       onClick={onClose}
     >
       <div
-        className="relative bg-paper text-ink rounded-lg max-w-2xl w-full p-7 sm:p-10 shadow-2xl"
+        className="relative bg-paper text-ink rounded-2xl max-w-2xl w-full p-7 sm:p-10 shadow-2xl border border-ink/10"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -41,21 +39,26 @@ console.log("data:", data);
           </svg>
         </button>
 
-        <p className="font-mono text-xs uppercase tracking-widest text-coral mb-3">Legal</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-coral mb-3">
+          Legal & Compliance
+        </p>
         <h2 className="font-display text-3xl sm:text-4xl leading-tight mb-2">{data.label}</h2>
-        <p className="font-mono text-[11px] text-ink/40 mb-8">{data.updated}</p>
+        <p className="font-mono text-[11px] text-ink/40 mb-4">{data.updated}</p>
+        {data.intro && (
+          <p className="font-body text-sm text-ink/60 leading-relaxed mb-4">{data.intro}</p>
+        )}
+        <p className="font-mono text-[10px] text-ink/40 mb-6">
+          {COMPANY.name} · {COMPANY.email}
+        </p>
 
-        <div className="space-y-8 max-h-[50vh] overflow-y-auto pr-2">
-          {data.sections.map((s) => (
-            <div key={s.title} className="border-t border-ink/10 pt-5">
-              <h3 className="font-display text-lg mb-2">{s.title}</h3>
-              <p className="font-body text-sm text-ink/60 leading-relaxed">{s.body}</p>
-            </div>
-          ))}
+        <div className="max-h-[50vh] overflow-y-auto pr-2">
+          <LegalSectionList sections={data.sections} />
         </div>
 
         {data.footnote && (
-          <p className="font-mono text-[11px] text-ink/40 mt-8">{data.footnote}</p>
+          <p className="font-mono text-[11px] text-ink/40 mt-8 pt-6 border-t border-ink/10">
+            {data.footnote}
+          </p>
         )}
       </div>
     </div>

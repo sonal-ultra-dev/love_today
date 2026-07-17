@@ -25,6 +25,7 @@ const FOOTER_COLUMNS = [
       { label: "Privacy Policy", to: "/privacy-policy" },
       { label: "Terms of Service", to: "/terms" },
       { label: "Refund Policy", to: "/refund-policy" },
+      { label: "Service Delivery", to: "/service-delivery-policy" },
       { label: "Contact", to: "/contact" },
     ],
   },
@@ -134,7 +135,10 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-ink-soft pt-8 flex flex-col sm:flex-row justify-between gap-4">
           <p className="font-mono text-xs text-muted">
-            © {new Date().getFullYear()} LoveToday. All rights reserved.
+            © {new Date().getFullYear()} Brift Technologies Private Limited. All rights reserved.
+          </p>
+          <p className="font-mono text-[10px] text-muted/80">
+            CIN U62099TS2025PTC207178 · GSTIN 36AAOCB1690G1ZI
           </p>
 
           <p className="font-mono text-xs text-muted">

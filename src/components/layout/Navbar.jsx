@@ -14,6 +14,7 @@ const LEGAL_LINKS = [
   { label: "Privacy Policy", key: "privacy" },
   { label: "Terms of Service", key: "terms" },
   { label: "Refund Policy", key: "refund" },
+  { label: "Service Delivery", key: "serviceDelivery" },
 ];
 
 export default function Navbar() {
@@ -44,12 +45,10 @@ export default function Navbar() {
   };
 
   const openLegalModal = (key) => {
-  console.log("Opening modal:", key);
-
-  setLegalOpen(false);
-  setOpen(false);
-  setActiveModal(key);
-};
+    setLegalOpen(false);
+    setOpen(false);
+    setActiveModal(key);
+  };
 
   return (
     <>
@@ -132,10 +131,7 @@ export default function Navbar() {
   <button
     key={item.key}
     type="button"
-    onClick={() => {
-      console.log("Clicked:", item.key);
-      openLegalModal(item.key);
-    }}
+    onClick={() => openLegalModal(item.key)}
     className="block w-full px-4 py-3 text-left text-sm text-paper/80 hover:bg-ink-soft hover:text-paper"
   >
     {item.label}

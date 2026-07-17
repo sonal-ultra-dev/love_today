@@ -1,8 +1,8 @@
 import { LEGAL_CONTENT } from "../components/content/legal";
 import LegalPageLayout from "../components/content/LegalPageLayout.jsx";
 
-export default function Terms() {
-  const { label, updated, intro, sections, footnote } = LEGAL_CONTENT.terms;
+export default function ServiceDeliveryPolicy() {
+  const { label, updated, intro, sections, footnote } = LEGAL_CONTENT.serviceDelivery;
   return (
     <LegalPageLayout
       label={label}
@@ -10,7 +10,7 @@ export default function Terms() {
       intro={intro}
       sections={sections}
       footnote={footnote}
-      activePath="/terms"
+      activePath="/service-delivery-policy"
     />
   );
 }

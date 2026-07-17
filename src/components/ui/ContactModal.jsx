@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import Button from "./Button.jsx";
+import { submitContactToGoogleSheets } from "../../lib/submitContactToGoogleSheets.js";
+import { COMPANY } from "../../components/content/legal.jsx";
+
+const emptyForm = { name: "", phone: "", email: "", message: "" };
 
 export default function ContactModal({ open, onClose }) {
+  const [form, setForm] = useState(emptyForm);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     if (!open) return;
@@ -18,14 +25,35 @@ export default function ContactModal({ open, onClose }) {
   }, [open, onClose]);
 
   useEffect(() => {
-    if (!open) setSubmitted(false);
+    if (!open) {
+      setSubmitted(false);
+      setLoading(false);
+      setError("");
+      setForm(emptyForm);
+    }
   }, [open]);
 
   if (!open) return null;
 
-  function handleSubmit(e) {
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    try {
+      await submitContactToGoogleSheets(form);
+      setSubmitted(true);
+      setForm(emptyForm);
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -62,11 +90,18 @@ export default function ContactModal({ open, onClose }) {
           Email us at{" "}
           <a
             className="text-coral underline"
-            href="mailto:support@yourdatingapp.com"
+            href={`mailto:${COMPANY.email}`}
           >
-            support@yourdatingapp.com
+            {COMPANY.email}
           </a>{" "}
-          or send a message below.
+          or call{" "}
+          <a
+            className="text-coral underline"
+            href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
+          >
+            {COMPANY.phone}
+          </a>
+          .
         </p>
 
         {submitted ? (
@@ -77,30 +112,45 @@ export default function ContactModal({ open, onClose }) {
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
               placeholder="Your name"
               required
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <input
-              type="number"
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
               placeholder="Phone number"
               required
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <input
               type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
               placeholder="Your email"
               required
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
             <textarea
+              name="message"
+              value={form.message}
+              onChange={handleChange}
               placeholder="How can we help?"
               required
               rows={4}
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
-            <Button type="submit" variant="primary">
-              Send message
+            {error && (
+              <p className="font-body text-sm text-red-600">{error}</p>
+            )}
+            <Button type="submit" variant="primary" disabled={loading}>
+              {loading ? "Sending..." : "Send message"}
             </Button>
           </form>
         )}
