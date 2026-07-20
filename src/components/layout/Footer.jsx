@@ -6,17 +6,9 @@ const FOOTER_COLUMNS = [
     links: [
       { label: "How it works", hash: "how-it-works" },
       { label: "Safety", hash: "safety" },
-      { label: "Stories", hash: "stories" },
+      { label: "About us", hash: "about-us" },
+      { label: "Testimonials", hash: "testimonials" },
       { label: "Pricing", hash: "pricing" },
-    ],
-  },
-  {
-    heading: "Company",
-    links: [
-      { label: "About", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Press", href: "#" },
-      { label: "Blog", href: "#" },
     ],
   },
   {
@@ -64,7 +56,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink border-t border-ink-soft pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Logo */}
           <div className="lg:col-span-1">
   <Link to="/" className="flex items-center gap-3">

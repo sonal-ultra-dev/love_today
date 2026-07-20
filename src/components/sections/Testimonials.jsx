@@ -1,6 +1,6 @@
 import DiaryCard from "../ui/DiaryCard.jsx";
 
-const STORIES = [
+const TESTIMONIALS = [
   {
     date: "Matched 6 months ago",
     rotate: "-2deg",
@@ -38,22 +38,22 @@ const STORIES = [
   },
 ];
 
-export default function Stories() {
+export default function Testimonials() {
   return (
-    <section id="stories" className="relative bg-ink py-24 sm:py-32 overflow-hidden">
+    <section id="testimonials" className="relative bg-ink py-24 sm:py-32 overflow-hidden">
       <div className="grain-overlay" />
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8">
         <div className="max-w-xl mb-20">
           <p className="font-mono text-xs uppercase tracking-widest text-honey mb-4">
-            Real entries, real people
+            Testimonials
           </p>
           <h2 className="font-display text-4xl sm:text-5xl text-paper leading-tight">
-            Stories that started on an ordinary today.
+            Real stories from people who found someone worth meeting.
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8">
-          {STORIES.map((story) => (
+          {TESTIMONIALS.map((story) => (
             <div key={story.name} className="flex flex-col items-center">
               <DiaryCard date={story.date} rotate={story.rotate} className="w-full">
                 {story.text}

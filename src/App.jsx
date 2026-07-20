@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar.jsx";
 import Footer from "./components/layout/Footer.jsx";
+import ScrollToTop from "./components/layout/ScrollToTop.jsx";
 import Hero from "./components/sections/Hero.jsx";
 import HowItWorks from "./components/sections/HowItWorks.jsx";
 import OneToOneClub from "./components/sections/OneToOneClub.jsx";
 import ReferralProgram from "./components/sections/ReferralProgram.jsx";
-import Stories from "./components/sections/Stories.jsx";
+import AboutUs from "./components/sections/AboutUs.jsx";
+import Testimonials from "./components/sections/Testimonials.jsx";
 import Safety from "./components/sections/Safety.jsx";
 import PricingSection from "./components/sections/Pricing.jsx";
 import CTABanner from "./components/sections/CTABanner.jsx";
@@ -23,7 +25,8 @@ function Home() {
       <HowItWorks />
       <OneToOneClub />
       <ReferralProgram />
-      <Stories />
+      <AboutUs />
+      <Testimonials />
       <Safety />
       <PricingSection embedded />
       <CTABanner />
@@ -34,6 +37,7 @@ function Home() {
 export default function App() {
   return (
     <div className="min-h-screen bg-ink">
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
