@@ -15,9 +15,9 @@ export default function CTABanner() {
           Join free, meet your matches in minutes, and see where the day
           takes you.
         </p>
-        <Button variant="dark" className="!bg-ink !text-paper hover:!bg-[#15121f]">
+        {/* <Button variant="dark" className="!bg-ink !text-paper hover:!bg-[#15121f]">
           Get the app — it's free
-        </Button>
+        </Button> */}
       </div>
     </section>
   );

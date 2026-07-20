@@ -39,7 +39,7 @@ export default function HowItWorks() {
         {/* header */}
         <div className="max-w-2xl mb-16">
           <p className="font-mono text-xs uppercase tracking-widest text-[#F6761B] mb-4">
-            A normal Tuesday, start to finish
+            A normal day in love, start to finish
           </p>
 
           <h2 className="font-display text-4xl sm:text-5xl leading-tight">

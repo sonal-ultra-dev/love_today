@@ -269,7 +269,7 @@ export default function PricingSection({ embedded = false }) {
           </div>
         </div>
 
-        <p
+        {/* <p
           className="font-mono text-[11px] text-ink/40 mt-8 pricing-fade-up"
           style={{ animationDelay: "500ms" }}
         >
@@ -282,7 +282,7 @@ export default function PricingSection({ embedded = false }) {
             Service Delivery Policy
           </Link>
           .
-        </p>
+        </p> */}
       </div>
     </section>
   );
