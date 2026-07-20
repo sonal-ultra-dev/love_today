@@ -143,7 +143,7 @@ export default function Navbar() {
               to="/contact"
               className="hidden lg:inline-flex items-center rounded-full border border-[#F6761B]/40 bg-[#F6761B]/10 px-4 py-2 font-body text-sm font-medium text-[#F6761B] hover:bg-[#F6761B] hover:text-white transition-all duration-300"
             >
-              Contact
+              Contact Us
             </Link>
 
             <button
