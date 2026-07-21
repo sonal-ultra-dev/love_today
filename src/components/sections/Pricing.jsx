@@ -31,7 +31,7 @@ const PLANS = [
     icon: "★",
     popular: true,
     price: "₹1,499",
-    priceSub: "per month · GST inclusive",
+    priceSub: "yearly · GST inclusive",
     features: [
       { label: "Likes", value: "Unlimited" },
       { label: "See who likes", value: "Yes" },
@@ -52,7 +52,7 @@ const PLANS = [
     dark: true,
     popular: false,
     price: "₹2,499",
-    priceSub: "per month · GST inclusive",
+    priceSub: "yearly · GST inclusive",
     features: [
       { label: "Likes", value: "Unlimited" },
       { label: "See who likes", value: "Yes" },
