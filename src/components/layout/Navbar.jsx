@@ -219,7 +219,11 @@ export default function Navbar() {
         )}
       </header>
 
-      <LegalModal contentKey={activeModal} onClose={() => setActiveModal(null)} />
+      <LegalModal
+        contentKey={activeModal}
+        onClose={() => setActiveModal(null)}
+        onNavigate={setActiveModal}
+      />
     </>
   );
 }

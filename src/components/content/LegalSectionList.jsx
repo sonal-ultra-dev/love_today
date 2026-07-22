@@ -1,10 +1,10 @@
 export default function LegalSectionList({ sections }) {
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {sections.map((section, index) => (
         <article
           key={section.title}
-          className="group rounded-2xl border border-ink/10 bg-white/80 backdrop-blur-sm p-6 sm:p-7 shadow-sm hover:shadow-lg hover:border-[#F6761B]/25 hover:-translate-y-0.5 transition-all duration-300"
+          className="group rounded-2xl border border-ink/10 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-sm hover:shadow-lg hover:border-[#F6761B]/25 hover:-translate-y-0.5 transition-all duration-300"
         >
           <div className="flex items-start gap-4">
             <span className="shrink-0 w-9 h-9 rounded-xl bg-[#FFF2E9] text-[#F6761B] font-display text-sm flex items-center justify-center">

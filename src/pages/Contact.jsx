@@ -57,7 +57,7 @@ export default function Contact() {
     <section className="relative bg-paper text-ink pt-36 pb-28 sm:pt-44 sm:pb-32 overflow-hidden">
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#F6761B]/10 blur-[140px] rounded-full" />
 
-      <div className="relative max-w-5xl mx-auto px-6 sm:px-8">
+      <div className="relative max-w-5xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="max-w-2xl mb-12">
           <p className="font-mono text-xs uppercase tracking-widest text-coral mb-4">
             Section 5 · Contact us
