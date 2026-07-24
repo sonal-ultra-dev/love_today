@@ -1,4 +1,4 @@
-export function submitContactToGoogleSheets({ name, phone, email, message }) {
+export function submitContactToGoogleSheets({ name, gender, phone, email, message }) {
   const scriptUrl = import.meta.env.VITE_GOOGLE_SHEETS_URL;
 
   if (!scriptUrl) {
@@ -35,7 +35,7 @@ export function submitContactToGoogleSheets({ name, phone, email, message }) {
     form.target = iframeName;
     form.style.display = "none";
 
-    const fields = { name, phone: phone || "", email, message };
+    const fields = { name, gender: gender || "", phone: phone || "", email, message };
 
     Object.entries(fields).forEach(([key, value]) => {
       const input = document.createElement("input");

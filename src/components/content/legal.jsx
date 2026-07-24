@@ -80,6 +80,10 @@ export const LEGAL_CONTENT = {
         body: `5.1 Free and Paid Features — Love Today offers both free and premium features. Free accounts have access to basic matching and messaging with daily limits. Premium plans ("Love Today Gold", "Love Today Platinum") unlock enhanced features as described on the Pricing page.\n\n5.2 Subscription Plans — Current pricing is displayed on the Platform's subscription page and may be updated from time to time. All prices are in Indian Rupees (INR) and inclusive of applicable GST unless stated otherwise.\n\n5.3 Auto-Renewal — All subscription plans auto-renew by default unless cancelled at least 24 hours before renewal via Settings > Subscription or your app store account.\n\n5.4 Price Changes — Subscription pricing changes are communicated at least 7 days in advance. The 1:1 Club fee is a one-time joining fee and may change immediately upon posting to the Platform.`,
       },
       {
+        title: "5A. The 1:1 Club",
+        body: `The 1:1 Club is a community membership feature through which Love Today aims to maintain a healthy gender balance in each region.\n\n5A.1 Purpose — We may refer to an approximate 1:1 gender ratio when describing our service. This reflects our intention to foster a balanced community, not a guaranteed outcome. Actual ratios depend on who joins, stays active, and uses the Platform in a given area, and will vary over time.\n\n5A.2 Joining Fee — Access to the 1:1 Club requires a one-time joining fee displayed on the Platform before you confirm payment. This fee is separate from premium subscription plans and in-app add-ons.\n\n5A.3 No Guarantee of Ratio — By joining or using the Platform, you acknowledge that gender balance is an effort and intention, not an exact or permanently maintained figure. We do not warrant any specific male-to-female ratio in any region.\n\n5A.4 Eligibility and Conduct — Membership may be subject to regional availability and platform-integrity criteria. We may suspend or revoke 1:1 Club access if you violate these Terms or misuse the feature.`,
+      },
+      {
         title: "6. Intellectual Property",
         body: "All content on the Platform — including app design, logo, trademarks, source code, graphics, and editorial content — is the exclusive property of Brift Technologies Private Limited and protected under applicable Indian and international intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use only.",
       },
@@ -128,6 +132,7 @@ export const LEGAL_CONTENT = {
           "Location (city/state), relationship preferences, interests, and lifestyle choices",
           "Messages exchanged with other users",
           "Referral code usage and Referrer–Referee linkage (if participating in the Referral Program)",
+          "1:1 Club membership status and regional enrollment details (if you join the 1:1 Club)",
         ],
       },
       {
@@ -154,11 +159,16 @@ export const LEGAL_CONTENT = {
           "Improving the Platform through analytics and research",
           "Marketing communications (with consent and easy opt-out)",
           "Operating the Referral & Scratch Card Bonus Program",
+          "Managing 1:1 Club membership and monitoring regional community balance (using gender and location data in aggregated or operational form — not to guarantee any specific ratio)",
         ],
       },
       {
         title: "4. Sensitive Personal Data",
         body: "Under India's SPDI Rules, we may collect sexual orientation (voluntary), financial information (via Razorpay), and biometric data (photo verification). We collect such data only with explicit consent and use it solely for the purpose collected. You may withdraw consent at any time.",
+      },
+      {
+        title: "4A. The 1:1 Club and Your Data",
+        body: "If you join the 1:1 Club, we use your gender and approximate location (city/region) to manage membership and support our aim of a balanced community in your area. This processing is based on your consent at sign-up and our legitimate interest in operating the Platform safely and fairly. We do not publish individual gender statistics publicly, and we do not guarantee any specific gender ratio in any region.",
       },
       {
         title: "5. Sharing Your Information",
@@ -179,6 +189,7 @@ export const LEGAL_CONTENT = {
           "Payment records: retained 7 years under Indian tax and accounting laws",
           "Deleted accounts: most data deleted within 30 days; transaction logs up to 5 years for fraud prevention",
           "Referral/bonus data: retained 5 years from the relevant transaction",
+          "1:1 Club membership and payment records: retained for the duration of membership and up to 7 years for tax and accounting compliance",
         ],
       },
       {
@@ -224,7 +235,7 @@ export const LEGAL_CONTENT = {
     sections: [
       {
         title: "1. Overview",
-        body: "Love Today is a digital subscription-based service. All purchases — including premium subscriptions and in-app add-ons (Boosts, Super Likes, etc.) — are for digital goods delivered immediately upon payment. You acknowledge that digital services are delivered immediately, you expressly waive any cooling-off right applicable to physical goods where not applicable to digital services under the Consumer Protection Act, 2019, and you have read this policy before purchasing.",
+        body: "Love Today is a digital subscription-based service. All purchases — including premium subscriptions, 1:1 Club joining fees, and in-app add-ons (Boosts, Super Likes, etc.) — are for digital goods delivered immediately upon payment. You acknowledge that digital services are delivered immediately, you expressly waive any cooling-off right applicable to physical goods where not applicable to digital services under the Consumer Protection Act, 2019, and you have read this policy before purchasing.",
       },
       {
         title: "2. Cancellation of Subscriptions",
@@ -254,6 +265,10 @@ export const LEGAL_CONTENT = {
         body: "The one-time Account Activation Fee is fully refundable only if activation fails due to a verified technical or billing error on our end. In all other circumstances, including deciding not to use the Platform after activation, the fee is non-refundable.",
       },
       {
+        title: "3.2B 1:1 Club Joining Fee",
+        body: "The one-time 1:1 Club joining fee is fully refundable only if enrollment fails due to a verified technical or billing error on our end. In all other circumstances — including deciding not to use the Platform after joining, or dissatisfaction with the gender balance in your region — the fee is non-refundable. The fee is separate from premium subscriptions and Account Activation Fees under the Referral Program.",
+      },
+      {
         title: "3.3 Refund Processing Timelines",
         body: "Approved refunds are initiated within 3–5 business days. Credit/Debit Card: 5–7 business days. UPI/Net Banking: 3–5 business days. Maximum total timeline: 10–12 business days from approval. You will receive email confirmation with Razorpay transaction/refund ID.",
       },
@@ -277,7 +292,7 @@ export const LEGAL_CONTENT = {
     sections: [
       {
         title: "1. Nature of Services",
-        body: "Love Today is a 100% digital platform. We do not sell or ship physical products. All services — premium subscriptions, profile boosts, super likes, and other in-app features — are delivered electronically through the mobile application and/or website.",
+        body: "Love Today is a 100% digital platform. We do not sell or ship physical products. All services — premium subscriptions, 1:1 Club membership, profile boosts, super likes, and other in-app features — are delivered electronically through the mobile application and/or website.",
       },
       {
         title: "2. Delivery of Subscription Plans",
@@ -291,8 +306,16 @@ export const LEGAL_CONTENT = {
         ],
       },
       {
-        title: "2.3 Delivery Confirmation",
-        body: "Delivery confirmation is provided through an email receipt to your registered email (with subscription details, billing period, and Razorpay transaction ID) and updated subscription status in Settings > Subscription.",
+        title: "2.4 Delivery of 1:1 Club Membership",
+        body: `Upon successful payment of the one-time 1:1 Club joining fee, your membership is activated within 2 minutes and reflected in your account settings. The current fee is always shown on the Platform before you confirm payment. No physical goods are shipped. If payment succeeds but membership is not activated, contact ${COMPANY.email} within 30 minutes — we will activate your membership or issue a full refund within 24 hours.`,
+      },
+      {
+        title: "2.5 1:1 Club — What We Deliver",
+        body: "1:1 Club membership grants access to our balanced-community feature for your registered region. We aim to maintain a healthy gender balance in each area, but actual ratios vary with signups and user activity. Membership does not include premium subscription features unless you separately purchase a Gold or Platinum plan.",
+      },
+      {
+        title: "2.6 Delivery Confirmation",
+        body: "Delivery confirmation is provided through an email receipt to your registered email (with subscription details, billing period, and Razorpay transaction ID) and updated subscription status in Settings > Subscription. For 1:1 Club membership, confirmation is also shown in your account settings upon activation.",
       },
       {
         title: "4. Delivery Failures",

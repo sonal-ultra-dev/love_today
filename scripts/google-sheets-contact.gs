@@ -3,7 +3,7 @@
  *
  * Setup:
  * 1. Create a Google Sheet (e.g. "Love Today Contacts")
- * 2. Add headers in row 1: Timestamp | Name | Phone | Email | Message
+ * 2. Add headers in row 1: Timestamp | Name | Gender | Phone | Email | Message
  * 3. Extensions → Apps Script → paste this file
  * 4. Click Run on doGet once and approve permissions
  * 5. Deploy → New deployment → Web app
@@ -21,6 +21,7 @@ function doPost(e) {
     sheet.appendRow([
       new Date(),
       params.name || "",
+      params.gender || "",
       params.phone || "",
       params.email || "",
       params.message || "",

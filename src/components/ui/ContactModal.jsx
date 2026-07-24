@@ -3,7 +3,14 @@ import Button from "./Button.jsx";
 import { submitContactToGoogleSheets } from "../../lib/submitContactToGoogleSheets.js";
 import { COMPANY } from "../../components/content/legal.jsx";
 
-const emptyForm = { name: "", phone: "", email: "", message: "" };
+const emptyForm = { name: "", gender: "", phone: "", email: "", message: "" };
+
+const GENDER_OPTIONS = [
+  { value: "male", label: "Male" },
+  { value: "female", label: "Female" },
+  { value: "other", label: "Other" },
+  { value: "prefer-not-to-say", label: "Prefer not to say" },
+];
 
 export default function ContactModal({ open, onClose }) {
   const [form, setForm] = useState(emptyForm);
@@ -38,6 +45,10 @@ export default function ContactModal({ open, onClose }) {
   function handleChange(e) {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
+  }
+
+  function handleGenderChange(value) {
+    setForm((prev) => ({ ...prev, gender: prev.gender === value ? "" : value }));
   }
 
   async function handleSubmit(e) {
@@ -119,6 +130,30 @@ export default function ContactModal({ open, onClose }) {
               required
               className="w-full px-4 py-3 rounded-sm bg-surface border border-ink-soft text-paper font-body outline-none focus:border-coral"
             />
+
+            <fieldset className="space-y-3">
+              <legend className="font-body text-sm text-ink/70">Gender (optional)</legend>
+              <div className="flex flex-wrap gap-2.5">
+                {GENDER_OPTIONS.map((option) => {
+                  const selected = form.gender === option.value;
+                  return (
+                    <button
+                      key={option.value}
+                      type="button"
+                      onClick={() => handleGenderChange(option.value)}
+                      className={`px-4 py-2.5 rounded-full border font-body text-sm transition-all ${
+                        selected
+                          ? "bg-[#F6761B] text-white border-[#F6761B] shadow-md shadow-[#F6761B]/20"
+                          : "bg-surface border-ink-soft text-paper hover:border-coral/60"
+                      }`}
+                    >
+                      {option.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+
             <input
               type="tel"
               name="phone"

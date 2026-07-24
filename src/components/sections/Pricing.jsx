@@ -244,9 +244,7 @@ export default function PricingSection({ embedded = false }) {
             <h3 className="font-display text-xl mb-2">Balanced community, by design</h3>
             <p className="font-body text-sm text-ink/65 leading-relaxed">
               We aim to keep a healthy gender balance in each region. The ratio can
-              vary as signups and activity change — it is an intention, not a
-              guarantee. A one-time joining fee applies; details are shown in the
-              app before you enroll.
+              vary as signups and activity change in each region.
             </p>
           </div>
 
