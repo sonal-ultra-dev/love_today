@@ -1,16 +1,16 @@
 const POINTS = [
   {
-    title: "Photo verification",
-    body: "A quick selfie check confirms every profile is a real, current person — not a five-year-old photo.",
+    title: "Real faces, real people",
+    body: "A quick selfie check helps make sure the person behind the profile is actually them.",
   },
   {
-    title: "Block & report, instantly",
-    body: "One tap removes someone from your matches and your feed for good. No explanation owed.",
-  },
+  title: "Not feeling it? Goodbye.",
+  body: "Block or report in one tap. They’re gone from your matches and feed. No awkward explanations needed.",
+},
   {
-    title: "Share your plans",
-    body: "Send your date details to a trusted contact straight from the chat before you meet up.",
-  },
+  title: "Keep your people in the loop",
+  body: "Share your date’s details with someone you trust straight from the chat before you meet. Just a little extra peace of mind.",
+},
 ];
 
 export default function Safety() {
@@ -23,7 +23,7 @@ export default function Safety() {
               Built to feel safe
             </p>
             <h2 className="font-display text-4xl sm:text-5xl text-paper leading-tight">
-              Meeting someone new shouldn't feel risky.
+              Meeting someone new should feel exciting, not sketchy.
             </h2>
           </div>
 

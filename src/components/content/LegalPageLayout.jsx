@@ -3,7 +3,18 @@ import LegalSectionList from "./LegalSectionList.jsx";
 import { LegalBackButton, LegalCloseButton } from "./LegalPageControls.jsx";
 import LegalNavTabs from "./LegalNavTabs.jsx";
 
-export default function LegalPageLayout({ label, updated, intro, sections, footnote, activePath }) {
+export default function LegalPageLayout({
+  label,
+  updated,
+  intro,
+  sections,
+  footnote,
+  activePath,
+  showLegalNav = true,
+  showCompanyBlock = true,
+  categoryLabel = "Legal & Compliance",
+  footerActions,
+}) {
   return (
     <section className="relative bg-paper text-ink min-h-[calc(100vh-5rem)] pt-24 pb-16 sm:pt-28 sm:pb-24">
       <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-[#F6761B]/10 blur-[140px] rounded-full pointer-events-none" />
@@ -16,14 +27,16 @@ export default function LegalPageLayout({ label, updated, intro, sections, footn
             <div className="flex items-center justify-between gap-3 px-5 sm:px-8 py-4">
               <LegalBackButton />
               <p className="hidden sm:block font-mono text-[10px] uppercase tracking-widest text-ink/40 shrink-0">
-                Legal documents
+                {showLegalNav ? "Legal documents" : "Account"}
               </p>
               <LegalCloseButton />
             </div>
 
-            <div className="px-5 sm:px-8 py-4 sm:py-5 border-t border-ink/5">
-              <LegalNavTabs activePath={activePath} />
-            </div>
+            {showLegalNav && (
+              <div className="px-5 sm:px-8 py-4 sm:py-5 border-t border-ink/5">
+                <LegalNavTabs activePath={activePath} />
+              </div>
+            )}
           </div>
 
           {/* Main content — padded inset from card edges */}
@@ -34,7 +47,7 @@ export default function LegalPageLayout({ label, updated, intro, sections, footn
               </span>
               <div className="min-w-0 pt-0.5">
                 <p className="font-mono text-xs uppercase tracking-widest text-[#F6761B] mb-2 sm:mb-3">
-                  Legal & Compliance
+                  {categoryLabel}
                 </p>
                 <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl leading-tight break-words">
                   {label}
@@ -50,21 +63,34 @@ export default function LegalPageLayout({ label, updated, intro, sections, footn
               </p>
             )}
 
-            <div className="grid sm:grid-cols-2 gap-4 text-xs font-body text-ink/55 rounded-2xl bg-[#FFF2E9]/30 border border-[#F6761B]/10 px-5 py-5 sm:px-6 sm:py-6 mb-10 sm:mb-12">
-              <p>
-                <span className="font-semibold text-ink/80 block mb-1">{COMPANY.name}</span>
-                Operated by Brift Technologies
-              </p>
-              <p className="break-words">CIN: {COMPANY.cin}</p>
-              <p className="break-words">GSTIN: {COMPANY.gstin}</p>
-              <p>
-                <a href={`mailto:${COMPANY.email}`} className="text-[#F6761B] hover:underline font-medium break-all">
-                  {COMPANY.email}
-                </a>
-              </p>
-            </div>
+            {showCompanyBlock && (
+              <div className="grid sm:grid-cols-2 gap-4 text-xs font-body text-ink/55 rounded-2xl bg-[#FFF2E9]/30 border border-[#F6761B]/10 px-5 py-5 sm:px-6 sm:py-6 mb-10 sm:mb-12">
+                <p>
+                  <span className="font-semibold text-ink/80 block mb-1">{COMPANY.name}</span>
+                  Operated by Brift Technologies
+                </p>
+                <p className="break-words">CIN: {COMPANY.cin}</p>
+                <p className="break-words">GSTIN: {COMPANY.gstin}</p>
+                <p>
+                  <a href={`mailto:${COMPANY.email}`} className="text-[#F6761B] hover:underline font-medium break-all">
+                    {COMPANY.email}
+                  </a>
+                </p>
+              </div>
+            )}
 
             <LegalSectionList sections={sections} />
+
+            {footerActions && (
+              <div className="mt-10 sm:mt-12 rounded-2xl border border-[#F6761B]/15 bg-[#FFF8F2] px-5 py-6 sm:px-7 sm:py-7">
+                <p className="font-body text-sm text-ink/65 mb-4 sm:mb-5 leading-relaxed">
+                  Need assistance with account deletion or account recovery?
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                  {footerActions}
+                </div>
+              </div>
+            )}
 
             {footnote && (
               <div className="mt-12 sm:mt-14 pt-8 sm:pt-10 border-t border-ink/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">

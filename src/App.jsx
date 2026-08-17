@@ -16,6 +16,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import Terms from "./pages/Terms.jsx";
 import RefundPolicy from "./pages/RefundPolicy.jsx";
 import ServiceDeliveryPolicy from "./pages/ServiceDeliveryPolicy.jsx";
+import ChildSafetyPolicy from "./pages/ChildSafetyPolicy.jsx";
+import DeleteUser from "./pages/DeleteUser.jsx";
 import Contact from "./pages/Contact.jsx";
 
 function Home() {
@@ -47,6 +49,8 @@ export default function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/service-delivery-policy" element={<ServiceDeliveryPolicy />} />
+          <Route path="/child-safety" element={<ChildSafetyPolicy />} />
+          <Route path="/deleteuser" element={<DeleteUser />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

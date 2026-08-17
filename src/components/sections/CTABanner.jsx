@@ -9,10 +9,10 @@ export default function CTABanner() {
       />
       <div className="relative max-w-4xl mx-auto px-6 sm:px-8 text-center">
         <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-ink leading-tight mb-6">
-          Today is as good a day as any.
+          Make today count. Join Love Today.
         </h2>
         <p className="font-body text-ink/70 text-lg max-w-md mx-auto mb-10">
-          Join free, meet your matches in minutes, and see where the day
+          Join, meet your matches in minutes, and see where the day
           takes you.
         </p>
         {/* <Button variant="dark" className="!bg-ink !text-paper hover:!bg-[#15121f]">

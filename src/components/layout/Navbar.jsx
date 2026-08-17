@@ -16,6 +16,8 @@ const LEGAL_LINKS = [
   { label: "Terms of Service", key: "terms" },
   { label: "Refund Policy", key: "refund" },
   { label: "Service Delivery", key: "serviceDelivery" },
+  { label: "Child Safety", key: "childSafety" },
+  { label: "Delete Account", to: "/deleteuser" },
 ];
 
 export default function Navbar() {
@@ -60,10 +62,14 @@ export default function Navbar() {
     }
   }
 
-  function openLegalModal(key) {
+  function handleLegalClick(item) {
     setLegalOpen(false);
     setOpen(false);
-    setActiveModal(key);
+    if (item.to) {
+      navigate(item.to);
+      return;
+    }
+    setActiveModal(item.key);
   }
 
   return (
@@ -124,9 +130,9 @@ export default function Navbar() {
                 <div className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-56 rounded-xl border border-ink-soft bg-surface shadow-xl overflow-hidden z-50">
                   {LEGAL_LINKS.map((item) => (
                     <button
-                      key={item.key}
+                      key={item.key || item.to}
                       type="button"
-                      onClick={() => openLegalModal(item.key)}
+                      onClick={() => handleLegalClick(item)}
                       className="block w-full px-4 py-3 text-left text-sm text-paper/80 hover:bg-ink-soft hover:text-paper transition-colors"
                     >
                       {item.label}
@@ -143,7 +149,7 @@ export default function Navbar() {
               to="/contact"
               className="hidden lg:inline-flex items-center rounded-full border border-[#F6761B]/40 bg-[#F6761B]/10 px-4 py-2 font-body text-sm font-medium text-[#F6761B] hover:bg-[#F6761B] hover:text-white transition-all duration-300"
             >
-              Contact Us
+              Pre-Registration
             </Link>
 
             <button
@@ -205,9 +211,9 @@ export default function Navbar() {
               <div className="flex flex-col gap-2">
                 {LEGAL_LINKS.map((item) => (
                   <button
-                    key={item.key}
+                    key={item.key || item.to}
                     type="button"
-                    onClick={() => openLegalModal(item.key)}
+                    onClick={() => handleLegalClick(item)}
                     className="text-left font-body text-paper/90 py-2 hover:text-[#F6761B] transition-colors"
                   >
                     {item.label}

@@ -3,26 +3,26 @@ const STEPS = [
     n: "01",
     time: "Instant",
     title: "Verify your profile",
-    body: "Quick verification keeps fake profiles out. You’re real, so your matches are real too.",
+    body: "A quick verification keeps the fake profiles out.",
   },
   {
-    n: "02",
-    time: "A few seconds",
-    title: "Get curated matches",
-    body: "We don’t show thousands of profiles. Just a few high-quality people you’re actually likely to connect with.",
-  },
+  n: "02",
+  time: "A few seconds",
+  title: "Get curated matches",
+  body: "No more scrolling through thousands of random profiles. Just a few carefully chosen matches that fit you.",
+},
   {
     n: "03",
-    time: "When it feels right",
+    time: "When there’s a spark",
     title: "Start a conversation",
-    body: "No pressure, no awkwardness. Chat only when there’s mutual interest.",
+    body: "Okay, you matched. Don’t fumble now.",
   },
   {
-    n: "04",
-    time: "Real life",
-    title: "Meet in person",
-    body: "Once both feel comfortable, we suggest a nearby spot for a low-pressure first meet.",
-  },
+  n: "04",
+  time: "IRL",
+  title: "Take the vibe offline",
+  body: "Chat going suspiciously well? When you’re both ready, we’ll suggest a nearby spot for an easy first meet. Coffee, dinner, or a quick drink that turns into the whole evening.",
+},
 ];
 
 export default function HowItWorks() {
@@ -39,11 +39,11 @@ export default function HowItWorks() {
         {/* header */}
         <div className="max-w-2xl mb-16">
           <p className="font-mono text-xs uppercase tracking-widest text-[#F6761B] mb-4">
-            A normal day in love, start to finish
+            How it works on Love Today
           </p>
 
           <h2 className="font-display text-4xl sm:text-5xl leading-tight">
-            From opening the app to dinner reservation.
+            First, prove you’re really you.
           </h2>
         </div>
 

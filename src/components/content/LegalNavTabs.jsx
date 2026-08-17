@@ -5,6 +5,7 @@ export const LEGAL_NAV = [
   { label: "Privacy", to: "/privacy-policy", key: "privacy" },
   { label: "Refund", to: "/refund-policy", key: "refund" },
   { label: "Service Delivery", to: "/service-delivery-policy", key: "serviceDelivery" },
+  { label: "Child Safety", to: "/child-safety", key: "childSafety" },
 ];
 
 export default function LegalNavTabs({ activePath, activeKey, onNavigate, className = "" }) {

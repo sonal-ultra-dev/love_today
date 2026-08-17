@@ -18,6 +18,8 @@ const FOOTER_COLUMNS = [
       { label: "Terms of Service", to: "/terms" },
       { label: "Refund Policy", to: "/refund-policy" },
       { label: "Service Delivery", to: "/service-delivery-policy" },
+      { label: "Child Safety", to: "/child-safety" },
+      { label: "Delete Account", to: "/deleteuser" },
       { label: "Contact", to: "/contact" },
     ],
   },

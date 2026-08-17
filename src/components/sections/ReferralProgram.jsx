@@ -4,13 +4,13 @@ const STEPS = [
     body: "Invite friends using your unique referral link or code.",
   },
   {
-    title: "They join Love Today",
+    title: "They sign up on Love Today.",
     body: "Your friend installs the app and completes sign-up with your code.",
   },
   {
-    title: "Bonus for both",
-    body: "They may receive a fixed Bonus Credit; you earn a Referral Bonus on successful activation.",
-  },
+  title: "Bonus for both",
+  body: "They get a fixed bonus credit when they join, and you earn a referral bonus once they successfully onboard into the 1:1 Club.",
+},
 ];
 
 export default function ReferralProgram() {
@@ -28,7 +28,7 @@ export default function ReferralProgram() {
               Referral & Scratch Card Bonus Program
             </h2>
             <p className="font-body text-muted leading-relaxed mb-6">
-              Share Love Today with someone special. When they join successfully,
+              Know someone who should be on Love Today? When they join successfully,
               you both benefit — with fixed, pre-determined rewards (not chance-based).
             </p>
 

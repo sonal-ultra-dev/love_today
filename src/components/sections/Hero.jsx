@@ -38,22 +38,28 @@ export default function Hero() {
           <br />
           Start loving today.
         </h1>
-
-        <p className="mt-8 text-lg text-white/80 leading-8 max-w-xl">
+<p className="mt-8 text-lg text-white/80 leading-8 max-w-xl">
+  50% Girls. 50% Guys. 100% Problem Solved.
+  <br />
+  Finally, the odds are in your favour.
+  <br />
+  With a balanced dating pool, you could have up to 5x more chances of finding
+  the right match.
+</p>
+        {/* <p className="mt-8 text-lg text-white/80 leading-8 max-w-xl">
           No endless swiping. No stale conversations.
           Meet genuine people nearby and turn online matches into real moments.
-        </p>
+        </p> */}
 
-        <div className="flex gap-5 mt-10 flex-wrap">
-          <Button
-            variant="primary"
-            className="contact-btn-pulse"
-            onClick={() => setContactOpen(true)}
-          >
-            Contact Us
-          </Button>
-          <Button variant="secondary">Learn More</Button>
-        </div>
+        <div className="flex justify-center mt-10">
+  <Button
+    variant="primary"
+    className="contact-btn-pulse"
+    onClick={() => setContactOpen(true)}
+  >
+    Pre-Registration
+  </Button>
+</div>
       </div>
 
       {/* RIGHT unchanged */}
@@ -95,7 +101,7 @@ export default function Hero() {
                 <h3 className="text-white text-2xl font-semibold">
                   Latika Rai, 20
                 </h3>
-                <p className="text-white/90">Delhi NCR</p>
+                <p className="text-white/90">Bangalore</p>
               </div>
             </div>
 

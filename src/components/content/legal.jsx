@@ -333,4 +333,117 @@ export const LEGAL_CONTENT = {
     footnote:
       "© 2026 Brift Technologies Private Limited. All rights reserved.",
   },
+
+  childSafety: {
+    label: "Child Safety Standards",
+    updated: "Last updated: July 17, 2026",
+    intro:
+      "Love Today is an adult platform strictly for users aged 18 and over. We maintain a zero-tolerance policy against Child Sexual Abuse and Exploitation (CSAE), fully aligned with the POCSO Act, 2012, the Information Technology Act, 2000, and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 (as amended).",
+    sections: [
+      {
+        title: "1. Our Commitment",
+        body: "Love Today is an adult platform strictly for users aged 18 and over. Love Today has a zero-tolerance policy against Child Sexual Abuse and Exploitation (CSAE), fully aligned with the Protection of Children from Sexual Offences (POCSO) Act, 2012, the Information Technology Act, 2000, and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 (as amended).",
+      },
+      {
+        title: "2. What We Prohibit",
+        body: "We strictly prohibit any content, behavior, communication, profile, image, video, link, or activity that involves or promotes:",
+        items: [
+          "Child sexual abuse material (CSAM), termed Child Sexual Exploitative and Abuse Material (CSEAM) under Indian law",
+          "Grooming, sexual solicitation, or sextortion of minors",
+          "Trafficking or exploitation of minors",
+          "Any attempt to endanger a child",
+          "AI-generated, edited, morphed, or synthetically generated content that depicts, suggests, or sexualizes a minor, as covered under the 2026 amendments to the IT Rules on synthetically generated information",
+        ],
+      },
+      {
+        title: "3. Age Requirements",
+        body: "Love Today is strictly for users aged 18 and over, in line with the age of majority under Indian law and the age threshold defined under the POCSO Act, 2012.",
+        items: [
+          "Do not lie about your age to access the platform",
+          "Do not share content that sexualizes, exploits, or endangers minors in any way",
+          "Do not attempt to contact or arrange meetings with minors",
+          "If we identify or reasonably suspect a user is under 18: the account will be immediately and permanently deleted, all associated data will be removed as per our data retention policy, and the incident will be logged internally, escalated for review, and reported where mandated by law",
+        ],
+      },
+      {
+        title: "4. How to Report",
+        body: `Users can report child safety concerns through Love Today's in-app reporting tools, including report user, report message/content, and support/contact options.\n\nReports may also be submitted by email at ${COMPANY.email}.\n\nUsers and third parties can additionally report suspected CSAM/CSEAM directly to India's National Cyber Crime Reporting Portal at cybercrime.gov.in, which allows anonymous reporting and is dedicated to crimes against women and children.\n\nIf you encounter content or behavior involving minors, report it immediately — we treat this as our highest priority.`,
+      },
+      {
+        title: "5. What We Do When We Receive a Report",
+        body: "When Love Today becomes aware of suspected or confirmed CSAM/CSEAM-related activity, we take action in accordance with applicable Indian law and platform enforcement procedures, which may include:",
+        items: [
+          "Removing or disabling access to content within the timelines mandated under the IT Rules, 2021 — currently 2 hours for complaints involving nudity, private-area exposure, or morphed images, and up to 36 hours for general grievance resolution",
+          "Suspending or terminating accounts",
+          "Preserving relevant information for the retention period required under the IT Rules (currently 180 days from removal or account cancellation)",
+          "Escalating the matter internally",
+          "Cooperating with law enforcement, including the National Cyber Crime Reporting Portal, State/UT police, and the National Commission for Protection of Child Rights (NCPCR)",
+          "Mandatory reporting of confirmed CSAM/CSEAM offences to the appropriate authority under the POCSO Act, 2012 (Sections 19–22) and the Bharatiya Nyaya Sanhita, 2023, as required by recent IT Rules amendments",
+        ],
+      },
+      {
+        title: "6. Minor Accounts",
+        body: "If we become aware that a minor has created an account, we will disable or delete the account and associated personal data, except where retention is required or permitted for safety, investigation, legal compliance, or reporting purposes under Indian law, including the IT Rules' 180-day record retention requirement.",
+      },
+      {
+        title: "7. Enforcement",
+        body: "Violation results in immediate permanent ban — no warning — and, where required under the IT Act, 2000 (Sections 67, 67A, 67B) or the POCSO Act, 2012, will be reported to relevant Indian law enforcement authorities. Permanent bans for child safety violations are not subject to appeal.",
+      },
+      {
+        title: "8. Grievance Officer and Local Contact (India-specific requirement)",
+        body: `As required under the IT Rules, 2021, Love Today designates an India-based Grievance Redressal Officer to receive and act on complaints, including child safety complaints, and to acknowledge receipt within 24 hours and resolve grievances within the timelines prescribed by law.\n\nGrievance Officer: Gunupudi Shanmukh Sai Prabhath\nDesignation: Admin / Grievance Officer\nContact: ${COMPANY.phone}\nEmail: ${COMPANY.email}`,
+      },
+      {
+        title: "9. Contact",
+        body: `Love Today — Operated by ${COMPANY.name}, ${COMPANY.address}\n\nEmail: director@lovetoday.co.in\n\nGrievance Officer: Gunupudi Shanmukh Sai Prabhath\nDesignation: Admin / Grievance Officer\nContact: ${COMPANY.phone}\nEmail: ${COMPANY.email}`,
+      },
+    ],
+    footnote:
+      "© 2026 Brift Technologies Private Limited. All rights reserved.",
+  },
+
+  deleteUser: {
+    label: "Delete Your Account",
+    updated: "Last updated: July 17, 2026",
+    intro:
+      "If you choose to delete your Love Today account, we send a confirmation email explaining your 30-day grace period. If you do not log in within 30 days, your profile and associated data will be permanently deleted.",
+    sections: [
+      {
+        title: "1. How to Delete Your Account",
+        body: "You can delete your account at any time from the Love Today app:\n\nSettings → Delete Account\n\nFollow the on-screen steps to confirm your request. Once confirmed, your account enters a scheduled deletion period.",
+      },
+      {
+        title: "2. Confirmation Email",
+        body: `When you delete your account, we automatically send a confirmation email to your registered email address. This email explains that your account is scheduled for permanent deletion and reminds you that you have 30 days to change your mind.\n\nThe email will state that if you do not log in within 30 days, your profile will be permanently deleted.`,
+      },
+      {
+        title: "3. 30-Day Grace Period",
+        body: "After you request deletion, your account enters a 30-day grace period. During this time:",
+        items: [
+          "Your profile is hidden from other users and you will not appear in search or matching",
+          "You can restore your account at any time by logging back into the Love Today app before the 30-day period ends",
+          "If you log in within 30 days, your deletion request is cancelled and your account is reactivated",
+          "If you do not log in within 30 days, your profile and associated personal data will be permanently deleted",
+        ],
+      },
+      {
+        title: "4. What Happens After 30 Days",
+        body: "If you do not log in within 30 days of requesting deletion, we permanently delete your profile and associated personal data, including photos, bio, preferences, and messages, in accordance with our Privacy Policy. Some transaction or fraud-prevention records may be retained where required by law.",
+      },
+      {
+        title: "5. Subscriptions and Payments",
+        body: "Deleting your account does not automatically cancel an active premium subscription. Cancel any active subscription before deleting your account via Settings → Subscription, or through your Apple App Store or Google Play account. Refunds are subject to our Refund Policy.",
+      },
+      {
+        title: "6. Didn't Receive the Email?",
+        body: `Check your spam or promotions folder. Make sure the email address on your account is correct. If you still haven't received the confirmation email within a few hours, contact us at ${COMPANY.email} with your registered mobile number.`,
+      },
+      {
+        title: "7. Need Help?",
+        body: `If you deleted your account by mistake or need assistance restoring it within the 30-day window, contact ${COMPANY.email} or call ${COMPANY.phone} (${COMPANY.supportHours}).`,
+      },
+    ],
+    footnote:
+      "© 2026 Brift Technologies Private Limited. All rights reserved.",
+  },
 };
