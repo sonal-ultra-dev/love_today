@@ -26,7 +26,7 @@ function Home() {
       <Hero />
       <HowItWorks />
       <OneToOneClub />
-      <ReferralProgram />
+      {/* <ReferralProgram /> */}
       <AboutUs />
       <Testimonials />
       <Safety />
