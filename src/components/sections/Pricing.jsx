@@ -231,7 +231,10 @@ export default function PricingSection({ embedded = false }) {
           ))}
         </div>
 
-        <div className="max-w-5xl mt-14 grid sm:grid-cols-2 gap-4 pricing-fade-up" style={{ animationDelay: "400ms" }}>
+        <div
+  className="mt-14 grid grid-cols-1 gap-4 pricing-fade-up"
+  style={{ animationDelay: "400ms" }}
+>
           <div className="group rounded-3xl border border-ink/10 bg-white/70 backdrop-blur-sm p-6 sm:p-7 hover:border-[#F6761B]/25 hover:shadow-lg transition-all duration-300">
             <div className="flex items-center gap-3 mb-3">
               <span className="w-10 h-10 rounded-xl bg-[#FFF2E9] text-[#F6761B] font-display text-lg flex items-center justify-center">
@@ -248,14 +251,14 @@ signups and activity change in each region.
             </p>
           </div>
 
-          <div className="group rounded-3xl border border-ink/10 bg-white/70 backdrop-blur-sm p-6 sm:p-7 hover:border-[#F6761B]/25 hover:shadow-lg transition-all duration-300">
+          {/* <div className="group rounded-3xl border border-ink/10 bg-white/70 backdrop-blur-sm p-6 sm:p-7 hover:border-[#F6761B]/25 hover:shadow-lg transition-all duration-300">
             <div className="flex items-center gap-3 mb-3">
               <span className="w-10 h-10 rounded-xl bg-[#FFF2E9] text-[#F6761B] text-lg flex items-center justify-center">
                 ↗
               </span>
               {/* <p className="font-mono text-[10px] uppercase tracking-widest text-coral">
                 Referral program
-              </p> */}
+              </p> }
             </div>
             <h3 className="font-display text-xl mb-2">Refer & Scratch Card Bonus</h3>
             <p className="font-body text-sm text-ink/65 leading-relaxed">
@@ -264,7 +267,7 @@ signups and activity change in each region.
               rewards, not chance-based. Some new users may need an account
               activation step; terms are shown at sign-up in the app.
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* <p
