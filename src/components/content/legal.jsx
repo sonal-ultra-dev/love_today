@@ -131,7 +131,7 @@ export const LEGAL_CONTENT = {
           "Profile photographs and bio/description",
           "Location (city/state), relationship preferences, interests, and lifestyle choices",
           "Messages exchanged with other users",
-          "Referral code usage and Referrer–Referee linkage (if participating in the Referral Program)",
+          
           "1:1 Club membership status and regional enrollment details (if you join the 1:1 Club)",
         ],
       },
@@ -158,7 +158,7 @@ export const LEGAL_CONTENT = {
           "Complying with legal obligations",
           "Improving the Platform through analytics and research",
           "Marketing communications (with consent and easy opt-out)",
-          "Operating the Referral & Scratch Card Bonus Program",
+          
           "Managing 1:1 Club membership and monitoring regional community balance (using gender and location data in aggregated or operational form — not to guarantee any specific ratio)",
         ],
       },
@@ -188,7 +188,7 @@ export const LEGAL_CONTENT = {
           "Messages: retained 90 days after a conversation ends; longer if flagged for safety review",
           "Payment records: retained 7 years under Indian tax and accounting laws",
           "Deleted accounts: most data deleted within 30 days; transaction logs up to 5 years for fraud prevention",
-          "Referral/bonus data: retained 5 years from the relevant transaction",
+          
           "1:1 Club membership and payment records: retained for the duration of membership and up to 7 years for tax and accounting compliance",
         ],
       },
@@ -261,12 +261,12 @@ export const LEGAL_CONTENT = {
         ],
       },
       {
-        title: "3.2A Account Activation Fee (Referral Program)",
+        title: "3.2A Account Activation Fee",
         body: "The one-time Account Activation Fee is fully refundable only if activation fails due to a verified technical or billing error on our end. In all other circumstances, including deciding not to use the Platform after activation, the fee is non-refundable.",
       },
       {
         title: "3.2B 1:1 Club Joining Fee",
-        body: "The one-time 1:1 Club joining fee is fully refundable only if enrollment fails due to a verified technical or billing error on our end. In all other circumstances — including deciding not to use the Platform after joining, or dissatisfaction with the gender balance in your region — the fee is non-refundable. The fee is separate from premium subscriptions and Account Activation Fees under the Referral Program.",
+        body: "The one-time 1:1 Club joining fee is fully refundable only if enrollment fails due to a verified technical or billing error on our end. In all other circumstances — including deciding not to use the Platform after joining, or dissatisfaction with the gender balance in your region — the fee is non-refundable. ",
       },
       {
         title: "3.3 Refund Processing Timelines",

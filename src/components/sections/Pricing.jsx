@@ -253,9 +253,9 @@ signups and activity change in each region.
               <span className="w-10 h-10 rounded-xl bg-[#FFF2E9] text-[#F6761B] text-lg flex items-center justify-center">
                 ↗
               </span>
-              <p className="font-mono text-[10px] uppercase tracking-widest text-coral">
+              {/* <p className="font-mono text-[10px] uppercase tracking-widest text-coral">
                 Referral program
-              </p>
+              </p> */}
             </div>
             <h3 className="font-display text-xl mb-2">Refer & Scratch Card Bonus</h3>
             <p className="font-body text-sm text-ink/65 leading-relaxed">

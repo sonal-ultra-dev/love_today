@@ -2,7 +2,7 @@ import DiaryCard from "../ui/DiaryCard.jsx";
 
 const TESTIMONIALS = [
   {
-    date: "Matched 6 months ago",
+    date: "Matched 3 Weeks ago",
     rotate: "-2deg",
     text: (
       <>
@@ -14,7 +14,7 @@ const TESTIMONIALS = [
     name: "Meera & Rohan",
   },
   {
-    date: "Matched 3 weeks ago",
+    date: "Matched 2 weeks ago",
     rotate: "1.5deg",
     text: (
       <>
@@ -26,7 +26,7 @@ const TESTIMONIALS = [
     name: "Sana & Dev",
   },
   {
-    date: "Matched last year",
+    date: "Matched 1 weeks ago",
     rotate: "-1deg",
     text: (
       <>
