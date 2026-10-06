@@ -19,6 +19,7 @@ import ServiceDeliveryPolicy from "./pages/ServiceDeliveryPolicy.jsx";
 import ChildSafetyPolicy from "./pages/ChildSafetyPolicy.jsx";
 import DeleteUser from "./pages/DeleteUser.jsx";
 import Contact from "./pages/Contact.jsx";
+import PreRegistration from "./pages/PreRegistration.jsx";
 
 function Home() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/child-safety" element={<ChildSafetyPolicy />} />
           <Route path="/deleteuser" element={<DeleteUser />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pre-registration" element={<PreRegistration />} />
         </Routes>
       </main>
       <Footer />

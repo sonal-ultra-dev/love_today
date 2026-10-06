@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button.jsx";
-import ContactModal from "../ui/ContactModal.jsx";
 import heroBg from "../../assets/latika.png";
 import heroBack from "../../assets/test123.jpg";
 // import heroBg from "../../assets/background2.png";
 
 export default function Hero() {
-  const [contactOpen, setContactOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <section
@@ -55,7 +54,7 @@ export default function Hero() {
   <Button
     variant="primary"
     className="contact-btn-pulse"
-    onClick={() => setContactOpen(true)}
+    onClick={() => navigate("/pre-registration")}
   >
     Pre-Registration
   </Button>
@@ -140,7 +139,6 @@ export default function Hero() {
     </div>
   </div>
 
-  <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
 </section>
   );
 }
